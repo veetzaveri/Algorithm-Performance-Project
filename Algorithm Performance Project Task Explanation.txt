@@ -1,0 +1,29 @@
+Task: Compare the performance of two distinct sorting algorithms to obtain
+some appreciation for the parameters to be considered in selecting an appropriate sort.
+Wrote a HeapSort and a Shell Sort. They are both iterative, so that the
+overhead of recursion will not be a factor in my comparisons. 
+
+The strategy behind a Shell Sort is to create a more nearly optimal environment for a simple, relatively
+inefficient sort technique, namely Simple Insertion Sort. This optimal environment allows the simple
+strategy to be efficient. 
+
+Used the following sets of increments:
+1, 4, 13, 40, 121, 364, 1093, 3280, 9841, 29524 (Knuth’s sequence)
+1, 5, 17, 53, 149, 373, 1123, 3371, 10111, 30341
+1, 10, 30, 60, 120, 360, 1080, 3240, 9720, 29160
+
+
+Heap Sort is a practical sort to know and is based on the concept of a heap. It has two phases: Build the
+heap and extract the elements in sorted order from the heap. Altogether, I will have five sorts: 1 Heap
+and 4 Shell.
+
+Create input files of four sizes: 25,50, 200, 500 integers. For each size file, made three versions. On the
+first, used a randomly ordered data set. On the second, used the integers in reverse order. On the third, used
+the integers in normal ascending order. 
+
+Program accesses the system clock to get some time values for the different runs. The call to
+the clock is placed as close as possible to the beginning and the end of each sort. If other code is
+included, it may have a large, fixed, cost, which would tend to drown out the differences between the
+runs, if any. 
+
+Analysis contains comparison of both HeapSort and ShellSort.
